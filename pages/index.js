@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1><center><br />ZIIPFUND COMPANY LIMITED<br />UNDER CONSTRUCTION</center></h1>
+        <h1><center><br />ZIIPFUND COMPANY LIMITED<br />UNDER CONSTRUCTION 555</center></h1>
       </main>
     </>
   )
