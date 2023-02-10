@@ -139,7 +139,7 @@ export default function Home() {
           </div>
           <div className="container">
             <div className="copyright">
-               Copyright © 2023<strong><span>Ziip Fund Lemited</span></strong>. All Rights Reserved
+               Copyright © 2023<strong><span> Ziip Fund Limited</span></strong>. All Rights Reserved
             </div>
             <div className="credits">
               {/* All the links in the footer should remain intact. */}
