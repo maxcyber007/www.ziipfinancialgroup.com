@@ -42,17 +42,6 @@ export default function Home() {
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== --> */}
-          {/* <!-- Vendor JS Files --> */}
-          <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" strategy='beform'></Script>
-        <Script src="/assets/vendor/aos/aos.js"></Script>
-        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
-        <Script src="/assets/vendor/glightbox/js/glightbox.min.js"></Script>
-        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
-        <Script src="/assets/vendor/swiper/swiper-bundle.min.js"></Script>
-        <Script src="/assets/vendor/php-email-form/validate.js"></Script>
-
-        {/* <!-- Template Main JS File --> */}
-        <Script src="/assets/js/main.js"></Script>
 
       </Head>
       <div>
@@ -65,7 +54,7 @@ export default function Home() {
             </a>
             <nav id="navbar" className="navbar">
               <ul>
-                <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a className="nav-link scrollto active" href="#home">Home</a></li>
                 <li><a className="nav-link scrollto" href="#about">About</a></li>
                 <li><a className="nav-link scrollto" href="#services">Services</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
@@ -92,7 +81,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <Image src="/assets/img/hero-img.png" className="img-fluid" width={200} height={200} />
+                <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} />
               </div>
             </div>
           </div>
