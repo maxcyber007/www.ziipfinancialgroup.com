@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta charset="utf-8" />
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
         <title>ZIIP FUND COMPANY LIMITED</title>
@@ -18,24 +17,24 @@ export default function Home() {
         <meta content="" name="keywords" />
 
         {/* <!-- Favicons --> */}
-        <link href="../assets/img/favicon.png" rel="icon" />
-        <link href="../assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+        <link href="/assets/img/favicon.png" rel="icon"/>
+        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
         {/* <!-- Google Fonts --> */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
 
         {/* <!-- Vendor CSS Files --> */}
-        <link href="../assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-        <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+        <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
         {/* <!-- Template Main CSS File --> */}
-        <link href="../assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet"/>
 
         {/* <!-- =======================================================
   * Template Name: FlexStart - v1.12.0
@@ -43,13 +42,25 @@ export default function Home() {
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== --> */}
+          {/* <!-- Vendor JS Files --> */}
+          <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" strategy='beform'></Script>
+        <Script src="/assets/vendor/aos/aos.js"></Script>
+        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
+        <Script src="/assets/vendor/glightbox/js/glightbox.min.js"></Script>
+        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
+        <Script src="/assets/vendor/swiper/swiper-bundle.min.js"></Script>
+        <Script src="/assets/vendor/php-email-form/validate.js"></Script>
+
+        {/* <!-- Template Main JS File --> */}
+        <Script src="/assets/js/main.js"></Script>
+
       </Head>
       <div>
         {/* ======= Header ======= */}
         <header id="header" className="header fixed-top">
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="#" className="logo d-flex align-items-center">
-              <Image src="assets/img/favicon.png" alt />
+              <Image src="/assets/img/favicon.png" width={42} height={100} />
               <span>ZIIPFUND</span>
             </a>
             <nav id="navbar" className="navbar">
@@ -70,8 +81,8 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-6 d-flex flex-column justify-content-center">
                 <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
-                <h2 data-aos="fade-up" data-aos-delay={400}></h2>
-                <div data-aos="fade-up" data-aos-delay={600}>
+                <h2 data-aos="fade-up" data-aos-delay="400"></h2>
+                <div data-aos="fade-up" data-aos-delay="600">
                   <div className="text-center text-lg-start">
                     <a href="#about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                       <span>Get Started</span>
@@ -81,7 +92,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <Image src="assets/img/hero-img.png" className="img-fluid" alt />
+                <Image src="/assets/img/hero-img.png" className="img-fluid" width={200} height={200} />
               </div>
             </div>
           </div>
@@ -93,7 +104,7 @@ export default function Home() {
               <div className="row gy-4">
                 <div className="col-lg-5 col-md-12 footer-info">
                   <a href="#" className="logo d-flex align-items-center">
-                    <Image src="assets/img/favicon.png" alt />
+                    <Image src="/assets/img/favicon.png" width="42" height="100" alt />
                     <span>ZIIPFUND</span>
                   </a>
                   <p>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
@@ -155,17 +166,6 @@ export default function Home() {
         {/* Template Main JS File */}
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-        {/* <!-- Vendor JS Files --> */}
-        <Script src="../assets/vendor/purecounter/purecounter_vanilla.js"></Script>
-        <Script src="../assets/vendor/aos/aos.js"></Script>
-        <Script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
-        <Script src="../assets/vendor/glightbox/js/glightbox.min.js"></Script>
-        <Script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
-        <Script src="../assets/vendor/swiper/swiper-bundle.min.js"></Script>
-        <Script src="../assets/vendor/php-email-form/validate.js"></Script>
-
-        {/* <!-- Template Main JS File --> */}
-        <Script src="../assets/js/main.js"></Script>
       </div>
     </>
   )
