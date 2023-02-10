@@ -50,7 +50,7 @@ export default function Home() {
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="#" className="logo d-flex align-items-center">
               <Image src="/assets/img/favicon.png" width={42} height={100} />
-              <span>ZIIPFUND</span>
+              <span>ZIIP</span><span className='text-black'>FUND</span>
             </a>
             <nav id="navbar" className="navbar">
               <ul>
@@ -94,7 +94,7 @@ export default function Home() {
                 <div className="col-lg-5 col-md-12 footer-info">
                   <a href="#" className="logo d-flex align-items-center">
                     <Image src="/assets/img/favicon.png" width="42" height="100" alt />
-                    <span>ZIIPFUND</span>
+                    <span>ZIIP</span><span className='text-black'>FUND</span>
                   </a>
                   <p>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
                   <div className="social-links mt-3">

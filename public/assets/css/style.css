@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+.text-black{
+  color: #000000;
+  text-decoration: none;
+}
+
 a:hover {
   color: #717ff5;
   text-decoration: none;
