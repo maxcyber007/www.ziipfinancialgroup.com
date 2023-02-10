@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
         <header id="header" className="header fixed-top">
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
             <a href="#" className="logo d-flex align-items-center">
-              <img src="assets/img/favicon.png" alt />
+              <Image src="assets/img/favicon.png" alt />
               <span>ZIIPFUND</span>
             </a>
             <nav id="navbar" className="navbar">
@@ -81,7 +81,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <img src="assets/img/hero-img.png" className="img-fluid" alt />
+                <Image src="assets/img/hero-img.png" className="img-fluid" alt />
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export default function Home() {
               <div className="row gy-4">
                 <div className="col-lg-5 col-md-12 footer-info">
                   <a href="#" className="logo d-flex align-items-center">
-                    <img src="assets/img/favicon.png" alt />
+                    <Image src="assets/img/favicon.png" alt />
                     <span>ZIIPFUND</span>
                   </a>
                   <p>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
@@ -156,16 +156,16 @@ export default function Home() {
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
         {/* <!-- Vendor JS Files --> */}
-        <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
-        <script src="../assets/vendor/aos/aos.js"></script>
-        <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
-        <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
-        <script src="../assets/vendor/php-email-form/validate.js"></script>
+        <Script src="../assets/vendor/purecounter/purecounter_vanilla.js"></Script>
+        <Script src="../assets/vendor/aos/aos.js"></Script>
+        <Script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
+        <Script src="../assets/vendor/glightbox/js/glightbox.min.js"></Script>
+        <Script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
+        <Script src="../assets/vendor/swiper/swiper-bundle.min.js"></Script>
+        <Script src="../assets/vendor/php-email-form/validate.js"></Script>
 
         {/* <!-- Template Main JS File --> */}
-        <script src="../assets/js/main.js"></script>
+        <Script src="../assets/js/main.js"></Script>
       </div>
     </>
   )
