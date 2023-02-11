@@ -9,42 +9,6 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <Head>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-        <title>ZIIPFUND COMPANY LIMITED</title>
-        <meta content="" name="description" />
-
-        <meta content="" name="keywords" />
-
-        {/* <!-- Favicons --> */}
-        <link href="/assets/img/favicon.png" rel="icon"/>
-        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-        {/* <!-- Google Fonts --> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
-
-        {/* <!-- Vendor CSS Files --> */}
-        <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-        <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-        {/* <!-- Template Main CSS File --> */}
-        <link href="assets/css/style.css" rel="stylesheet"/>
-
-        {/* <!-- =======================================================
-  * Template Name: FlexStart - v1.12.0
-  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== --> */}
-
-      </Head>
       <div>
         {/* ======= Header ======= */}
         <header id="header" className="header fixed-top">
@@ -74,7 +38,7 @@ export default function Home() {
                 <h2 data-aos="fade-up" data-aos-delay="400"></h2>
                 <div data-aos="fade-up" data-aos-delay="600">
                   <div className="text-center text-lg-start">
-                    <a href="#about" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <a href="/signin" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                       <span>Get Started</span>
                       <i className="bi bi-arrow-right" />
                     </a>
@@ -157,6 +121,8 @@ export default function Home() {
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
       </div>
+
+
     </>
   )
 }

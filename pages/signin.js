@@ -10,13 +10,7 @@ export default function Signin() {
     return (
         <>
             <Head>
-                <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
                 <title>ZIIPFUND COMPANY LIMITED</title>
-                <meta content="" name="description" />
-
-                <meta content="" name="keywords" />
-
                 {/* <!-- Favicons --> */}
                 <link href="/assets/img/favicon.png" rel="icon" />
                 <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
@@ -25,6 +19,9 @@ export default function Signin() {
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
+
+  {/*Bootstrap.min css*/}
+  <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
 
                 {/* <!-- Vendor CSS Files --> */}
                 <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -35,19 +32,12 @@ export default function Signin() {
                 <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
                 {/* <!-- Template Main CSS File --> */}
-
-
-
-                {/*Bootstrap.min css*/}
-                <link rel="stylesheet" href="/assets/plugins/bootstrap/css/bootstrap.min.css" />
-                {/* Dashboard css */}
                 <link href="/assets/css/style.css" rel="stylesheet" />
-                {/*Daterangepicker css*/}
-                <link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
-                {/*-Font icons css*/}
-                <link href="/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
-                <link href="/assets/plugins/iconfonts/icons.css" rel="stylesheet" />
-                <link href="/assets/fonts/fonts/font-awesome.min.css" rel="stylesheet" />
+
+                  {/*-Font icons css*/}
+  <link href="/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+  <link href="/assets/plugins/iconfonts/icons.css" rel="stylesheet" />
+  <link href="/assets/fonts/fonts/font-awesome.min.css" rel="stylesheet" />
 
                 {/* <!-- =======================================================
   * Template Name: FlexStart - v1.12.0
@@ -55,7 +45,6 @@ export default function Signin() {
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== --> */}
-
             </Head>
             <div>
                 {/* ======= Header ======= */}
@@ -98,25 +87,26 @@ export default function Signin() {
                                                     {/* <h3>Login</h3> */}
                                                     <p className="text-dark">Sign In to your account</p>
                                                     <form action="" method="post">
-                                                    <div className="input-group mb-3">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text"><i className="fa fa-user" /></div>
-                                                        </div>
-                                                        <input type="text" name="email" id="email" className="form-control bg-white" placeholder="Email" required />
+                                                        <div className="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i className="fa fa-user" /></div>
+                                                            </div>
+                                                            <input type="text" name="email" id="email" className="form-control bg-white" placeholder="Email" required />
 
-                                                    </div>
-                                                    <div className="input-group mb-3">
-                                                        <div class="input-group-prepend">
-                                                            <div class="input-group-text"><i className="fa fa-unlock-alt" /></div>
                                                         </div>
-                                                        <input type="password" name="password" id="password" className="form-control bg-white" placeholder="Password" required />
+                                                        <div className="input-group mb-3">
+                                                            <div class="input-group-prepend">
+                                                                <div class="input-group-text"><i className="fa fa-unlock-alt" /></div>
+                                                            </div>
+                                                            <input type="password" name="password" id="password" className="form-control bg-white" placeholder="Password" required />
 
-                                                    </div>
-                                                    <div className="row">
-                                                        <div className="col-md-12">
-                                                            <button type="submit" className="btn btn-primary btn-block">Login</button>
                                                         </div>
-                                                    </div>
+                                                        <div className="row">
+                                                            
+                                                            <div className="col-md-12 text-center text-lg-start">
+                                                                <button type="submit" className="btn btn-get-started btn-block"><span>Sign In</span> <i className="bi bi-arrow-right" /></button>
+                                                            </div>
+                                                        </div>
                                                     </form>
                                                     <p></p>
                                                     <div className="row">
@@ -130,10 +120,10 @@ export default function Signin() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
-                    
+
                 </section>{/* End Hero */}
                 {/* ======= Footer ======= */}
                 <footer id="footer" className="footer">
@@ -205,6 +195,16 @@ export default function Signin() {
                 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
             </div>
+                    {/* <!-- Vendor JS Files --> */}
+        <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/aos/aos.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="beforeInteractive"></Script>
+        <Script src="/assets/vendor/php-email-form/validate.js" strategy="beforeInteractive"></Script>
+        {/* <!-- Template Main JS File --> */}
+        <Script src="/assets/js/main.js" strategy="beforeInteractive"></Script>
         </>
     )
 }
