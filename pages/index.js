@@ -5,56 +5,16 @@ import styles from '@/styles/Home.module.css'
 import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
+import Navbar from 'components/nav'
 
 export default function Home() {
   return (
     <>
       <Head>
         <title>ZIIPFUND COMPANY LIMITED</title>
-        {/* <!-- Favicons --> */}
-        <link href="/assets/img/favicon.png" rel="icon" />
-        <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
-
-        {/* <!-- Google Fonts --> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
-
-        {/*Bootstrap.min css*/}
-        <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css" />
-
-        {/* <!-- Vendor CSS Files --> */}
-        <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
-        <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-        <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-        <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
-        <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
-        {/* <!-- Template Main CSS File --> */}
-        <link href="/assets/css/style.css" rel="stylesheet" />
-
       </Head>
       <div>
-        {/* ======= Header ======= */}
-        <header id="header" className="header fixed-top">
-          <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="#" className="logo d-flex align-items-center">
-              <Image src="/assets/img/favicon.png" width={42} height={100} />
-              <span>ZIIP</span><span className='text-black'>FUND</span>
-            </a>
-            <nav id="navbar" className="navbar">
-              <ul>
-                <li><Link class="nav-link active" href="/">Home</Link></li>
-                <li><Link class="nav-link" href="#about">About</Link></li>
-                <li><Link class="nav-link" href="#services">Services</Link></li>
-                <li><Link class="nav-link" href="#contact">Contact</Link></li>
-                <li><Link class="getstarted" href="/signin">Get Started</Link></li>
-              </ul>
-              <i className="bi bi-list mobile-nav-toggle" />
-            </nav>{/* .navbar */}
-          </div>
-        </header>{/* End Header */}
+        <Navbar />
         {/* ======= Hero Section ======= */}
         <section id="hero" className="hero d-flex align-items-center">
           <div className="container">
@@ -137,7 +97,7 @@ export default function Home() {
               {/* You can delete the links only if you purchased the pro version. */}
               {/* Licensing information: https://bootstrapmade.com/license/ */}
               {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ */}
-              DESIGN BY <Link href="https://www.zipptech.io">ZIIP TECHNOLOGY</Link>
+              DEVELOPMENT BY <Link href="https://www.zipptech.io">ZIIP TECHNOLOGY</Link>
             </div>
           </div>
         </footer>{/* End Footer */}
@@ -147,16 +107,6 @@ export default function Home() {
         <Link href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></Link>
 
       </div>
-      {/* <!-- Vendor JS Files --> */}
-      <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/aos/aos.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/php-email-form/validate.js" strategy="beforeInteractive"></Script>
-      {/* <!-- Template Main JS File --> */}
-      <Script src="/assets/js/main.js" strategy="beforeInteractive"></Script>
     </>
   )
 }
