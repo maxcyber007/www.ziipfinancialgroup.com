@@ -58,7 +58,7 @@ export default function Home() {
                 <li><a className="nav-link scrollto" href="#about">About</a></li>
                 <li><a className="nav-link scrollto" href="#services">Services</a></li>
                 <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a className="getstarted scrollto" href="#">Get Started</a></li>
+                <li><a className="getstarted scrollto" href="/signin">Get Started</a></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
             </nav>{/* .navbar */}
