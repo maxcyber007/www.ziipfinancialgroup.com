@@ -67,11 +67,11 @@ export default function Signin() {
                         </a>
                         <nav id="navbar" className="navbar">
                             <ul>
-                                <li><a className="nav-link scrollto active" href="#home">Home</a></li>
-                                <li><a className="nav-link scrollto" href="#about">About</a></li>
-                                <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                                <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                                <li><a className="getstarted scrollto" href="#">Get Started</a></li>
+                            <li><Link className="nav-link scrollto active" href="/">Home</Link></li>
+                <li><Link className="nav-link scrollto" href="#about">About</Link></li>
+                <li><Link className="nav-link scrollto" href="#services">Services</Link></li>
+                <li><Link className="nav-link scrollto" href="#contact">Contact</Link></li>
+                <li><Link className="getstarted scrollto" href="/signin">Get Started</Link></li>
                             </ul>
                             <i className="bi bi-list mobile-nav-toggle" />
                         </nav>{/* .navbar */}

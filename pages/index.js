@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -54,11 +55,11 @@ export default function Home() {
             </a>
             <nav id="navbar" className="navbar">
               <ul>
-                <li><a className="nav-link scrollto active" href="#home">Home</a></li>
-                <li><a className="nav-link scrollto" href="#about">About</a></li>
-                <li><a className="nav-link scrollto" href="#services">Services</a></li>
-                <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
-                <li><a className="getstarted scrollto" href="/signin">Get Started</a></li>
+                <li><Link className="nav-link scrollto active" href="/">Home</Link></li>
+                <li><Link className="nav-link scrollto" href="#about">About</Link></li>
+                <li><Link className="nav-link scrollto" href="#services">Services</Link></li>
+                <li><Link className="nav-link scrollto" href="#contact">Contact</Link></li>
+                <li><Link className="getstarted scrollto" href="/signin">Get Started</Link></li>
               </ul>
               <i className="bi bi-list mobile-nav-toggle" />
             </nav>{/* .navbar */}
