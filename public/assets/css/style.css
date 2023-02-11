@@ -145,7 +145,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #836701;
+  background: #bd9503;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -205,7 +205,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #836701;
+  color: #bd9503;
   /* font-family: "Nunito", sans-serif; */
   font-family: 'Prompt', sans-serif;
   margin-top: 3px;
@@ -243,7 +243,7 @@ section {
   font-family: 'Prompt', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #836701;
+  color: #bd9503;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -274,7 +274,7 @@ section {
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #836701;
+  background: #bd9503;
 }
 
 .navbar .dropdown ul {
@@ -404,7 +404,7 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #836701;
+  color: #bd9503;
 }
 
 .navbar-mobile a:hover,
@@ -466,7 +466,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #836701;
+  color: #bd9503;
 }
 
 .hero h2 {
@@ -482,7 +482,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #836701;
+  background: #bd9503;
   box-shadow: 0px 5px 30px rgba(4, 4, 4, 0.4);
 }
 
@@ -2334,7 +2334,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #836701;
+  color: #bd9503;
   /* font-family: "Nunito", sans-serif; */
   font-family: 'Prompt', sans-serif;
   margin-top: 3px;
@@ -2357,13 +2357,13 @@ section {
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #836701;
+  color: #bd9503;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #836701;
+  color: #bd9503;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2397,7 +2397,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a {
-  color: #836701;
+  color: #bd9503;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -2422,3 +2422,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #000000;
+}
