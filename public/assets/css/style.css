@@ -264,19 +264,19 @@ section {
 
 .navbar .getstarted-signup,
 .navbar .getstarted-signup:focus {
-  background: #999999;
-  padding: 8px 10px;
+  background: #deb902;
+  padding: 5px 10px;
   margin-left: 30px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #fff;
 }
 
 .navbar .getstarted-signin,
 .navbar .getstarted-signin:focus {
   background: #bd9503;
-  padding: 8px 10px;
+  padding: 5px 10px;
   margin-left: 5px;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #fff;
 }
 

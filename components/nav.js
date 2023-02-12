@@ -20,7 +20,7 @@ export default function Nav() {
               <li><Link className="nav-link" href="#about">About</Link></li>
               <li><Link className="nav-link" href="#service">Services</Link></li>
               <li><Link className="nav-link" href="#footer">Contact</Link></li>
-              <li><Link className="getstarted-signup" href="/signup">SingUp</Link></li>
+              <li><Link className="getstarted-signup" href="/signup">Get Started</Link></li>
               <li><Link className="getstarted-signin" href="/signin">SignIn</Link></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" />
