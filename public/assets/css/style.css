@@ -262,17 +262,32 @@ section {
   color: #000000;
 }
 
-.navbar .getstarted,
-.navbar .getstarted:focus {
-  background: #000000;
-  padding: 8px 20px;
+.navbar .getstarted-signup,
+.navbar .getstarted-signup:focus {
+  background: #999999;
+  padding: 8px 10px;
   margin-left: 30px;
-  border-radius: 4px;
+  border-radius: 5px;
   color: #fff;
 }
 
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
+.navbar .getstarted-signin,
+.navbar .getstarted-signin:focus {
+  background: #bd9503;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.navbar .getstarted-singup:hover,
+.navbar .getstarted-singup:focus:hover {
+  color: #fff;
+  background: #bd9503;
+}
+
+.navbar .getstarted-singin:hover,
+.navbar .getstarted-singin:focus:hover {
   color: #fff;
   background: #bd9503;
 }
