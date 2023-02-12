@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} />
+                <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} alt="hero-img"/>
               </div>
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
               <div className="row gy-4">
                 <div className="col-lg-5 col-md-12 footer-info">
                   <Link href="#" className="logo d-flex align-items-center">
-                    <Image src="/assets/img/favicon.png" width="42" height="100" />
+                    <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon"/>
                     <span>ZIIP</span><span className='text-black'>FUND</span>
                   </Link>
                   <p>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
@@ -104,7 +104,7 @@ export default function Home() {
         <Link href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short" /></Link>
         {/* Vendor JS Files */}
         {/* Template Main JS File */}
-        <Link href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></Link>
+        <Link href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></Link>
 
       </div>
     </>
