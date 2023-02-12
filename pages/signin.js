@@ -6,8 +6,70 @@ import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
 import Navbar from 'components/nav'
+import { useRouter } from "next/router";
+import { useRef, useState } from 'react'
+import Swal from 'sweetalert2'
 
 export default function Signin() {
+
+    const router = useRouter()
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    const jsonData = {
+      email: data.get('email'),
+      password: data.get('password'),
+    }
+    console.log({
+      email: data.get('email'),
+      password: data.get('password'),
+    });
+
+    fetch('http://localhost:8080/login', {
+    
+    method: 'POST', // or 'PUT'
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(jsonData),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      if(data.status == 'ok'){
+        console.log(data)
+        localStorage.setItem('token', data.token)
+        //alert('Success')
+        //window.location = '/about'
+
+        // Swal.fire({
+        //   position: 'center',
+        //   icon: 'success',
+        //   title: 'Login Success',
+        //   showConfirmButton: false,
+        //   timer: 1000
+        // })
+
+        return router.push('/dashboard')
+      }else{
+        //alert('No Success')
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: 'Login Failed<br /><h6>Please Your Check Again.</h6>',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        return router.push('/signin')
+      }
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+    
+  };
+
     return (
         <>
             <Head>
@@ -20,9 +82,9 @@ export default function Signin() {
                     <div className="container">
                         <div className="row">
 
-                        <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <Image src="/assets/img/signin/signin-img.png" className="img-fluid d-none d-lg-block" width={539} height={438} alt="hero-img" />
-              </div>
+                            <div className="col-lg-6 d-flex flex-column justify-content-center hero-img" data-aos="zoom-out" data-aos-delay={200}>
+                                <Image src="/assets/img/signin/signin-img.png" className="img-fluid d-none d-lg-block" width={539} height={438} alt="hero-img" priority />
+                            </div>
                             <div className="col-lg-6 d-flex flex-column justify-content-center">
                                 <h2 data-aos="fade-up" data-aos-delay="400"></h2>
                                 <div data-aos="fade-up" data-aos-delay="600">
@@ -31,22 +93,22 @@ export default function Signin() {
                                             <div className="row">
                                                 <div className="col-xl-12 col-md-12 col-md-12">
                                                     <div className="text-center mb-12">
-                                                        {/* <Image src="/assets/img/signin/logo.png" width={150} height={51} /> */}
-                                                    <h1>SECURE<span className="text-black"> LOGIN</span></h1>
+                                                        {/* <Image src="/assets/img/signin/logo.png" width={150} height={51} priority /> */}
+                                                        <h1>SECURE<span className="text-black"> LOGIN</span></h1>
                                                     </div>
                                                     {/* <h3>Login</h3> */}
                                                     <p className="text-dark">Sign In to your account</p>
-                                                    <form action="" method="post">
+                                                    <form onSubmit={handleSubmit}>
                                                         <div className="input-group mb-3">
                                                             <div class="input-group-prepend">
-                                                                <div class="input-group-text"><i className="fa fa-user" /></div>
+                                                                <div class="input-group-text"><i className="fa fa-envelope" /></div>
                                                             </div>
                                                             <input type="text" name="email" id="email" className="form-control bg-white" placeholder="Email" required />
 
                                                         </div>
                                                         <div className="input-group mb-3">
                                                             <div class="input-group-prepend">
-                                                                <div class="input-group-text"><i className="fa fa-unlock-alt" /></div>
+                                                                <div class="input-group-text"><i className="fa fa-expeditedssl" /></div>
                                                             </div>
                                                             <input type="password" name="password" id="password" className="form-control bg-white" placeholder="Password" required />
 
@@ -61,7 +123,7 @@ export default function Signin() {
                                                     <p></p>
                                                     <div className="row">
                                                         <div className="col-12">
-                                                            <Link href="#"><i class="fa fa-expeditedssl" data-toggle="tooltip" title="fa fa-expeditedssl"></i> Forgot Password</Link>
+                                                            <Link href="#"><i className="fa fa-expeditedssl" data-toggle="tooltip" title="fa fa-expeditedssl"></i> Forgot Password</Link>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -75,6 +137,9 @@ export default function Signin() {
                     </div>
 
                 </section>{/* End Hero */}
+                <main id="main">
+
+                </main>{/* End #main */}
                 {/* ======= Footer ======= */}
                 <footer id="footer" className="footer">
                     <div className="footer-top">
@@ -135,7 +200,7 @@ export default function Signin() {
                             {/* You can delete the links only if you purchased the pro version. */}
                             {/* Licensing information: https://bootstrapmade.com/license/ */}
                             {/* Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ */}
-                            Development By <Link href="https://www.zipptech.io">ZIIP TECHNOLOGY</Link>
+                            DEVELOPMENT BY <Link href="https://www.zipptech.io">ZIIP TECHNOLOGY</Link>
                         </div>
                     </div>
                 </footer>{/* End Footer */}

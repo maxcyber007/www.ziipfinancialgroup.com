@@ -13,14 +13,13 @@ export default function Home() {
       <Head>
         <title>ZIIPFUND COMPANY LIMITED</title>
       </Head>
-      <div>
         <Navbar />
         {/* ======= Hero Section ======= */}
         <section id="hero" className="hero d-flex align-items-center">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
+                <h1 data-aos="fade-up">We offer modern solutions for growing your fund.</h1>
                 <h2 data-aos="fade-up" data-aos-delay="400"></h2>
                 <div data-aos="fade-up" data-aos-delay="600">
                   <div className="text-center text-lg-start">
@@ -32,7 +31,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} alt="hero-img"/>
+                <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} alt="hero-img" priority/>
               </div>
             </div>
           </div>
@@ -44,7 +43,7 @@ export default function Home() {
               <div className="row gy-4">
                 <div className="col-lg-5 col-md-12 footer-info">
                   <Link href="#" className="logo d-flex align-items-center">
-                    <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon"/>
+                    <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
                     <span>ZIIP</span><span className='text-black'>FUND</span>
                   </Link>
                   <p>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
@@ -105,8 +104,6 @@ export default function Home() {
         {/* Vendor JS Files */}
         {/* Template Main JS File */}
         <Link href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></Link>
-
-      </div>
     </>
   )
 }
