@@ -92,8 +92,8 @@ export default function Signup(prop) {
                 <section className="hero d-flex align-items-center">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-6 d-flex flex-column justify-content-center hero-img" data-aos="zoom-out" data-aos-delay={200}>
-                                <Image src="/assets/img/signin/signup-img.png" className="img-fluid d-none d-lg-block" width={539} height={438} alt="hero-img" priority />
+                            <div className="col-lg-6 d-flex flex-column justify-content-center hero-img d-none d-lg-block" data-aos="zoom-out" data-aos-delay={200}>
+                                <Image src="/assets/img/signin/signup-img.png" className="img-fluid" width={539} height={438} alt="hero-img" priority />
                             </div>
                             <div className="col-lg-6 d-flex flex-column justify-content-center">
                                 <h2 data-aos="fade-up" data-aos-delay="400"></h2>
