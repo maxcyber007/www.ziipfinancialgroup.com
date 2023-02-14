@@ -3760,7 +3760,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .jqstooltip .jqsfield {
 	font: inherit !important;
 }
-.social-links li a {
+.social-linkss li a {
 	background: #f8f8f8;
 	border-radius: 50%;
 	color: #cbd2dc;
@@ -8556,22 +8556,22 @@ hr.message-inner-separator {
 	-ms-flex: 1;
 	flex: 1;
 }
-.social i{
+.socials i{
 	font-size:40px;
 }
-.social .social-icon i{
+.socials .social-icon i{
 	font-size:14px;
 }
-.instagram{
+.instagrams{
 	background:#de497b;
 }
-.linkedin{
+.linkedins{
 	background:#0077b5;
 }
-.twitter{
+.twitters{
 	background:#41a4f7;
 }
-.facebook{
+.facebooks{
 	background:#3a48a9;
 }
 /*-----progress-----*/
@@ -12808,7 +12808,7 @@ body.fixed-header .page {
 	padding: 1rem 1.5rem;
 	border-bottom: 1px solid rgba(107,122,144,0.1);
 }
-.header {
+.headers {
 	padding-top: 0;
 	padding-bottom: 0;
 	background:#fff;
@@ -12978,7 +12978,7 @@ body.fixed-header .header {
 	margin: -2px 0 0 -.5rem;
 	box-shadow: 0 5px currentColor, 0 -5px currentColor;
 }
-.footer {
+.footers {
 	border-top:1px solid rgba(107,122,144,0.1);
     font-size: 0.875rem;
     padding: 1.25rem 0;
@@ -12988,14 +12988,14 @@ body.fixed-header .header {
 		margin:0 -15px -15px -15px;
 	}
 }
-.footer .social ul li{
+.footers .social ul li{
 	float:left;
 	padding:7px;
 }
-.footer .social ul li a{
+.footers .social ul li a{
 	color:#cbd2dc;;
 }
-.footer .social{
+.footers .social{
 	margin:0 auto;
 }
 
@@ -18283,7 +18283,7 @@ Dimmer
 
 /*-------- Loaders ---------*/
 /*Spineer3*/
-.spinner3 {
+.spinner3s {
   margin: 100px auto ;
   width: 40px;
   height: 40px;
@@ -18339,7 +18339,7 @@ Dimmer
 
 /*Spineer4*/
 
-.spinner4 {
+.spinner4s {
 	margin: 100px auto !important;
 	width: 70px;
 	text-align: center;

@@ -266,8 +266,8 @@ section {
 .navbar .getstarted-signup:focus {
   background: #b79902;
   padding: 5px 10px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 40px;
   color: #fff;
 }
@@ -276,8 +276,8 @@ section {
 .navbar .getstarted-signin:focus {
   background: #846800;
   padding: 5px 10px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 40px;
   color: #fff;
 }
@@ -401,6 +401,7 @@ section {
   position: absolute;
   top: 15px;
   right: 15px;
+  
 }
 
 .navbar-mobile ul {
@@ -428,9 +429,15 @@ section {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: #000000;
+  
 }
 
-.navbar-mobile .getstarted,
+.navbar-mobile .getstarted-signin,
+.navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+
+.navbar-mobile .getstarted-signup,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
 }
@@ -467,6 +474,7 @@ section {
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+  
 }
 
 /*--------------------------------------------------------------

@@ -86,17 +86,17 @@ const AdminSidebar = () => {
               <div className="tab-pane active " id="index1">
                 <ul className="side-menu toggle-menu">
                   <li>
-                    <Link class="side-menu__item" href="/dashboard"><i class="side-menu__icon fa fa-home"></i><span class="side-menu__label">Home</span></Link>
+                    <Link className="side-menu__item" href="/dashboard"><i class="side-menu__icon fa fa-home"></i><span class="side-menu__label">Home</span></Link>
                   </li>
 
                   <li>
-                    <Link class="side-menu__item" href="/packages"><i class="side-menu__icon fa fa-cart-plus"></i><span class="side-menu__label">Packages</span></Link>
+                    <Link className="side-menu__item" href="/packages"><i class="side-menu__icon fa fa-cart-plus"></i><span class="side-menu__label">Packages</span></Link>
                   </li>
                   <li>
-                    <Link class="side-menu__item" href="/member"><i class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Member</span></Link>
+                    <Link className="side-menu__item" href="/member"><i class="side-menu__icon fa fa-user"></i><span class="side-menu__label">Member</span></Link>
                   </li>
                   <li>
-                    <Link class="side-menu__item" href="#"><i class="side-menu__icon fa fa-cog"></i><span class="side-menu__label">Setting</span></Link>
+                    <Link className="side-menu__item" href="#"><i class="side-menu__icon fa fa-cog"></i><span class="side-menu__label">Setting</span></Link>
                   </li>
                   {/* <li className="slide">
                     <a className="side-menu__item" data-toggle="slide" href="#"><i className="side-menu__icon typcn typcn-device-desktop" /><span className="side-menu__label">Dashboard</span><i className="angle fa fa-angle-right" /></a>

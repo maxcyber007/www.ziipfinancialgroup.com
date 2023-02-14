@@ -75,6 +75,9 @@ export default function Dashboard() {
         {/* app-content*/}
         <div className="app-content  my-3 my-md-5 toggle-content">
           <div className="side-app">
+            <div className="bg-white p-5 header-secondary row">
+
+            </div>
             {/* page-header */}
             <div className="page-header">
               <ol className="breadcrumb">{/* breadcrumb */}

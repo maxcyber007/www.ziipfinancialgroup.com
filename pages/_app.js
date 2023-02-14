@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
 import Script from 'next/script'
 import Head from 'next/head'
+import Navbar from 'components/nav'
+import Footer from 'components/footer'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -33,20 +35,21 @@ export default function App({ Component, pageProps }) {
         <link href="/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
         <link href="/assets/plugins/iconfonts/icons.css" rel="stylesheet" />
         <link href="/assets/fonts/fonts/font-awesome.min.css" rel="stylesheet" />
+
       </Head>
-      {/* <!-- Vendor JS Files --> */}
-      <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/aos/aos.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/glightbox/js/glightbox.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/swiper/swiper-bundle.min.js" strategy="beforeInteractive"></Script>
-      <Script src="/assets/vendor/php-email-form/validate.js" strategy="beforeInteractive"></Script>
-      {/* <!-- Template Main JS File --> */}
-      <Script src="/assets/js/main.js" strategy="beforeInteractive"></Script>
-
+      <Navbar />
       <Component {...pageProps} />
-
+<Footer />
+      {/* <!-- Vendor JS Files --> */}
+      <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="/assets/vendor/aos/aos.js"></script>
+      <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="/assets/vendor/php-email-form/validate.js"></script>
+      {/* <!-- Template Main JS File --> */}
+      <script src="/assets/js/main.js"></script>
     </>
   )
 }

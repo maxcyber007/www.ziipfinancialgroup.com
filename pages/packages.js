@@ -71,20 +71,13 @@ export default function Packages() {
             <AdminHOC>
                 <Head>
                     <title>Precise Trading Systems Management</title>
+
                 </Head>
                 {/* app-content*/}
                 <div className="app-content  my-3 my-md-5 toggle-content">
                     <div className="side-app">
-                        <div className="bg-white p-3 header-secondary row">
-                            <div className="col">
-                                <div className="d-flex">
-                                    <a className="btn btn-danger" href="#"><i className="fe fe-rotate-cw mr-1 mt-1" /> Upgrade </a>
-                                </div>
-                            </div>
-                            <div className="col col-auto">
-                                <a className="btn btn-light mt-4 mt-sm-0" href="#"><i className="fe fe-help-circle mr-1 mt-1" />  Support</a>
-                                <a className="btn btn-success mt-4 mt-sm-0" href="#"><i className="fe fe-plus mr-1 mt-1" /> Add New</a>
-                            </div>
+                        <div className="bg-white p-5 header-secondary row">
+
                         </div>
                         {/* page-header */}
                         <div className="page-header">
@@ -94,17 +87,7 @@ export default function Packages() {
                             </ol>{/* End breadcrumb */}
                             <div className="ml-auto">
                                 <div className="input-group">
-                                    <a className="btn btn-primary text-white mr-2" id="daterange-btn">
-                                        <span>
-                                            <i className="fa fa-calendar" /> Events Settings
-                                        </span>
-                                        <i className="fa fa-caret-down" />
-                                    </a>
-                                    <a href="#" className="btn btn-secondary text-white" data-toggle="tooltip" title data-placement="bottom" data-original-title="Rating">
-                                        <span>
-                                            <i className="fa fa-star" />
-                                        </span>
-                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -113,7 +96,7 @@ export default function Packages() {
                         <div className="row">
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-primary" />
+                                    <div className="card-status bg-primary" />
                                     <div className="card-body text-center">
                                         <div className="card-category">BASIC</div>
                                         <div className="display-5 my-4">$100</div>
@@ -149,7 +132,7 @@ export default function Packages() {
                             </div>{/* col-end */}
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-warning" />
+                                    <div className="card-status bg-warning" />
                                     <div className="card-body text-center">
                                         <div className="card-category">Personal</div>
                                         <div className="display-5 my-4">$500</div>
@@ -167,7 +150,7 @@ export default function Packages() {
                             </div>{/* col-end */}
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-danger" />
+                                    <div className="card-status bg-danger" />
                                     <div className="card-body text-center">
                                         <div className="card-category">Corporate</div>
                                         <div className="display-5 my-4">$1000</div>
@@ -186,11 +169,11 @@ export default function Packages() {
                         </div>
                         {/* row end */}
 
-                                                {/* row */}
-                                                <div className="row">
+                        {/* row */}
+                        <div className="row">
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-azure" />
+                                    <div className="card-status bg-azure" />
                                     <div className="card-body text-center">
                                         <div className="card-category">ENTERPRISE</div>
                                         <div className="display-5 my-4">$2000</div>
@@ -226,7 +209,7 @@ export default function Packages() {
                             </div>{/* col-end */}
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-orange" />
+                                    <div className="card-status bg-orange" />
                                     <div className="card-body text-center">
                                         <div className="card-category">BUSINESS</div>
                                         <div className="display-5 my-4">$5000</div>
@@ -244,7 +227,7 @@ export default function Packages() {
                             </div>{/* col-end */}
                             <div className="col-sm-6 col-lg-3">
                                 <div className="card">
-                                <div className="card-status bg-cyan" />
+                                    <div className="card-status bg-cyan" />
                                     <div className="card-body text-center">
                                         <div className="card-category">Unlimited</div>
                                         <div className="display-5 my-4">$10000</div>
@@ -263,7 +246,7 @@ export default function Packages() {
                         </div>
                         {/* row end */}
 
-                                            </div>
+                    </div>
                     {/* Right-sidebar*/}
                     <div className="sidebar sidebar-right sidebar-animate">
                         <div className="tab-menu-heading siderbar-tabs border-0">
@@ -684,15 +667,7 @@ export default function Packages() {
                         </div>
                     </div>{/* End Rightsidebar*/}
                     {/*footer*/}
-                    <footer className="footer">
-                        <div className="container">
-                            <div className="row align-items-center flex-row-reverse">
-                                <div className="col-lg-12 col-sm-12   text-center">
-                                    Copyright © 2019 <a href="#">Hogo</a>. Designed by <a href="https://www.spruko.com/">Spruko</a> All rights reserved.
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
+                    <AdminFooter />
                     {/* End Footer*/}
                 </div>
                 {/* End app-content*/}
