@@ -5,7 +5,9 @@ import styles from '@/styles/Home.module.css'
 import Script from 'next/script'
 const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
-
+import Navbar from 'components/nav'
+import Footer from 'components/footer'
+import { FONT_MANIFEST } from 'next/dist/shared/lib/constants'
 
 export default function Home() {
   return (
@@ -13,7 +15,6 @@ export default function Home() {
       <Head>
         <title>ZIIPFUND COMPANY LIMITED</title>
       </Head>
-
       {/* ======= Hero Section ======= */}
       <section id="hero" className="hero d-flex align-items-center">
         <div className="container">
@@ -39,7 +40,7 @@ export default function Home() {
       <main id="main">
 
       </main>{/* End #main */}
-
+      <Footer />
     </>
   )
 }

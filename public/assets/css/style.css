@@ -241,9 +241,9 @@ section {
   padding: 10px 0 10px 30px;
   /* font-family: "Nunito", sans-serif; */
   font-family: 'Prompt', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  color: #bd9503;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000000;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -259,12 +259,12 @@ section {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #000000;
+  color: #bd9503;
 }
 
 .navbar .getstarted-signup,
 .navbar .getstarted-signup:focus {
-  background: #b79902;
+  background: #000000;
   padding: 5px 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -486,6 +486,7 @@ section {
   background-size: cover;
 }
 
+
 .hero h1 {
   margin: 0;
   font-size: 48px;
@@ -702,6 +703,16 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
+.features {
+  width: 100%;
+  background: url(../img/hero-bg.png) top center no-repeat;
+  background-size: cover;
+}
+
+.text-green {
+  color: #01b91d;
+}
+
 .features .feature-box {
   padding: 24px 20px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
@@ -982,12 +993,18 @@ section {
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
+.pricing {
+  width: 100%;
+  background: url(../img/hero-bg.png) top center no-repeat;
+  background-size: cover;
+}
+
 .pricing .box {
   padding: 40px 20px;
-  background: #fff;
+  background: #ffffff;
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-  border-radius: 4px;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   transition: 0.3s;

@@ -9,6 +9,9 @@ import { useRouter } from "next/router";
 import { useRef, useState } from 'react'
 import Swal from 'sweetalert2'
 
+import Navbar from 'components/nav'
+import Footer from 'components/footer'
+
 export default function Signin() {
 
     const router = useRouter()
@@ -25,7 +28,7 @@ export default function Signin() {
             password: data.get('password'),
         });
 
-        fetch('http://localhost:8080/login', {
+        fetch('http://54.255.217.77:8080/login', {
 
             method: 'POST', // or 'PUT'
             headers: {
@@ -48,8 +51,8 @@ export default function Signin() {
                     //   showConfirmButton: false,
                     //   timer: 1000
                     // })
-
-                    return router.push('/dashboard')
+                    return router.replace('/dashboard');
+                    //return router.push('/dashboard')
                 } else {
                     //alert('No Success')
                     Swal.fire({
@@ -74,7 +77,6 @@ export default function Signin() {
             <Head>
                 <title>ZIIPFUND COMPANY LIMITED</title>
             </Head>
-
             {/* ======= Hero Section ======= */}
             <section className="hero d-flex align-items-center">
                 <div className="container">
@@ -139,7 +141,7 @@ export default function Signin() {
             <main id="main">
 
             </main>{/* End #main */}
-
+            <Footer />
         </>
     )
 }

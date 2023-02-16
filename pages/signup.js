@@ -9,6 +9,8 @@ import Link from 'next/link'
 import { useRouter } from "next/router";
 import { useRef, useState } from 'react'
 import Swal from 'sweetalert2'
+import Navbar from 'components/nav'
+import Footer from 'components/footer'
 
 export default function Signup(prop) {
   //Referal Generate
@@ -40,7 +42,7 @@ export default function Signup(prop) {
       //child_ref_code: data.get('child_ref_code'),
     }
 
-    fetch('http://localhost:8080/register', {
+    fetch('http://54.255.217.77:8080/register', {
 
       method: 'POST', // or 'PUT'
       headers: {
@@ -144,7 +146,7 @@ export default function Signup(prop) {
                           <div class="form-group">
                             <label class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input" />
-                              <span class="custom-control-label">Agree the <a href="terms.html">Terms and Policy</a></span>
+                              <span class="custom-control-label">Agree the <Link href="#"><span style={{color: '#0033CC'}}>Terms and Policy</span></Link></span>
                             </label>
                           </div>
                           <div className="row">
@@ -174,7 +176,7 @@ export default function Signup(prop) {
       <main id="main">
 
       </main>{/* End #main */}
-
+      <Footer />
     </>
   )
 }

@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
         {/* <!-- Template Main CSS File --> */}
-        <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+        <link type="text/css" href="/assets/css/style.css" rel="stylesheet" />
 
         {/*-Font icons css*/}
         <link href="/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-<Footer />
+{/* <Footer /> */}
       {/* <!-- Vendor JS Files --> */}
       <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
       <script src="/assets/vendor/aos/aos.js"></script>
