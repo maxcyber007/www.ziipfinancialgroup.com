@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
         {/* <!-- Template Main CSS File --> */}
-        <link type="text/css" href="/assets/css/style.css" rel="stylesheet" />
+        <link href="/assets/css/style.css" rel="stylesheet" />
 
         {/*-Font icons css*/}
         <link href="/assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
@@ -41,15 +41,15 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
 {/* <Footer /> */}
       {/* <!-- Vendor JS Files --> */}
-      <Script src="/assets/vendor/purecounter/purecounter_vanilla.js" />
-      <Script src="/assets/vendor/aos/aos.js" />
-      <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <Script src="/assets/vendor/glightbox/js/glightbox.min.js" />
-      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" />
-      <Script src="/assets/vendor/swiper/swiper-bundle.min.js" />
-      <Script src="/assets/vendor/php-email-form/validate.js" />
+      <Script src="/assets/vendor/purecounter/purecounter_vanilla.js"></Script>
+      <Script src="/assets/vendor/aos/aos.js"></Script>
+      <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></Script>
+      <Script src="/assets/vendor/glightbox/js/glightbox.min.js"></Script>
+      <Script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></Script>
+      <Script src="/assets/vendor/swiper/swiper-bundle.min.js"></Script>
+      <Script src="/assets/vendor/php-email-form/validate.js"></Script>
       {/* <!-- Template Main JS File --> */}
-      <Script src="/assets/js/main.js" />
+      <Script src="/assets/js/main.js"></Script>
     </>
   )
 }
