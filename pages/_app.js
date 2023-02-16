@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
         {/* <!-- Favicons --> */}
         <link href="/assets/img/favicon.png" rel="icon" />
         <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
