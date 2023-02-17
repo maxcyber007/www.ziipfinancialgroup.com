@@ -28,7 +28,7 @@ export default function Signin() {
             password: data.get('password'),
         });
 
-        fetch('http://54.255.217.77:8080/login', {
+        fetch('54.255.217.77:8080/login', {
 
             method: 'POST', // or 'PUT'
             headers: {
