@@ -19,7 +19,8 @@ export default function Packages() {
 
   useEffect(() => {
     const token = localStorage.getItem('token')
-    fetch('http://54.255.217.77:8080/auth', {
+    fetch('https://api.ziipfund.com/auth', {
+    //fetch('http://localhost:8080/auth', {
 
       method: 'POST', // or 'PUT'
       headers: {

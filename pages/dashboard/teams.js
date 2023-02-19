@@ -9,7 +9,7 @@ import Link from 'next/link'
 import { useRef, useState } from 'react'
 import Footer from 'components/footer'
 
-export default function Dashboard() {
+export default function Teams() {
 
   const router = useRouter();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -69,50 +69,44 @@ export default function Dashboard() {
   <div className="container" data-aos="fade-up">
   <br /><br />
     <header className="section-header">
-    <p style={{color: '#07d5c0'}}>ZIIP<span className="text-black">FUND ASSETS</span></p>
-      <h2><span className="text-black">TRADDING</span></h2>
+    <p style={{color: '#07d5c0'}}>ZIIP<span className="text-black">FUND TEAMS</span></p>
+      <h2><span className="text-black">YOUR TEAMWORK</span></h2>
     </header>
     <div className="row">
       <div className="col-lg-6">
-        <Image src="/assets/img/features.png" className="img-fluid" width={'1043'} height={'663'} alt=""/>
+        <Image src="/assets/img/teams.png" className="img-fluid" width={'1043'} height={'663'} alt=""/>
       </div>
       <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
         <div className="row align-self-center gy-4">
           
-          <div className="col-md-6" data-aos="zoom-out" data-aos-delay={200}>
-            <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>EUR/USD <span className="text-green">+3.25%</span></h3>
+          <div className="col-md-12 text-center" data-aos="zoom-out" data-aos-delay={200}>
+            <div className="feature-box d-flex align-items-center text-center">
+              <i className="bi bi-diagram-3" />
+              <h3>Level 1 {" : "}<span className="text-green"><Link href="#"> 10 Users</Link></span></h3>
             </div>
           </div>
           <div className="col-md-6" data-aos="zoom-out" data-aos-delay={300}>
             <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>GBP/USD <span className="text-green">+6.12%</span></h3>
+              <i className="bi bi-diagram-3" />
+              <h3>Level 2 {" : "}<span className="text-green"><Link href="#"> 15 Users</Link></span></h3>
             </div>
           </div>
           <div className="col-md-6" data-aos="zoom-out" data-aos-delay={400}>
             <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>JPY/USD <span className="text-green">+2.22%</span></h3>
+              <i className="bi bi-diagram-3" />
+              <h3>Level 3 {" : "}<span className="text-green"><Link href="#"> 20 Users</Link></span></h3>
             </div>
           </div>
           <div className="col-md-6" data-aos="zoom-out" data-aos-delay={500}>
             <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>XAU/USD <span className="text-green">+5.65%</span></h3>
+              <i className="bi bi-diagram-3" />
+              <h3>Level 4 {" : "}<span className="text-green"><Link href="#"> 30 Users</Link></span></h3>
             </div>
           </div>
           <div className="col-md-6" data-aos="zoom-out" data-aos-delay={600}>
             <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>AUD/USD <span className="text-green">+3.45%</span></h3>
-            </div>
-          </div>
-          <div className="col-md-6" data-aos="zoom-out" data-aos-delay={700}>
-            <div className="feature-box d-flex align-items-center">
-              <i className="bi bi-check" />
-              <h3>NZD/USD <span className="text-green">+2.11%</span></h3>
+              <i className="bi bi-diagram-3" />
+              <h3>Level 5 {" : "}<span className="text-green"><Link href="#"> 40 Users</Link></span></h3>
             </div>
           </div>
         </div>

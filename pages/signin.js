@@ -28,7 +28,9 @@ export default function Signin() {
             password: data.get('password'),
         });
 
-        fetch('54.255.217.77:8080/login', {
+       
+         fetch('https://api.ziipfund.com/login', {
+        //fetch('http://localhost:8080/login', {
 
             method: 'POST', // or 'PUT'
             headers: {

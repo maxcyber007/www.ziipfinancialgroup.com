@@ -28,22 +28,34 @@ export default function Signup(prop) {
 
   const router = useRouter()
 
-  const child_ref_code = router.asPath.substr(12, 10)
+  const child_ref_code_url = router.asPath.substr(12, 10)
+  var child_ref_code
+  if(child_ref_code_url == ""){
+    child_ref_code = "ziipfund"
+  }else{
+    child_ref_code = child_ref_code_url
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const jsonData = {
       ref_code: data.get('ref_code'),
+      child_ref_code: data.get('child_ref_code'),
       firstname: data.get('firstname'),
       lastname: data.get('lastname'),
       email: data.get('email'),
       password: data.get('password'),
-      //child_ref_code: data.get('child_ref_code'),
+      confirm_password: data.get('confirm_password'),
+      confirm_accept: data.get('confirm_accept'),
     }
 
-    fetch('http://54.255.217.77:8080/register', {
+    console.log('Confirm Accept:', jsonData.confirm_accept);
 
+    if(jsonData.password == jsonData.confirm_password && jsonData.confirm_accept > 0){
+
+    fetch('https://api.ziipfund.com/register', {
+    //fetch('http://localhost:8080/register', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -70,17 +82,39 @@ export default function Signup(prop) {
             showConfirmButton: false,
             timer: 1500
           })
-          return router.push('/register')
+          return router.push('/signup')
+          console.log('Success:', data);
         }
-        console.log('Success:', data);
+       
       })
       .catch((error) => {
         console.error('Error:', error);
       });
 
+    }else if(jsonData.password != jsonData.confirm_password){
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Passwords do NOT match',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      return router.push('/signup')
+    }else if(jsonData.confirm_accept == null){
+      Swal.fire({
+        position: 'center',
+        icon: 'error',
+        title: 'Please You Accept Policy',
+        showConfirmButton: false,
+        timer: 1500
+      })
+      return router.push('/signup')
+    }else{
+
+    }
 
 
-  };
+  }; //end handleSubmit
 
   return (
     <>
@@ -141,11 +175,11 @@ export default function Signup(prop) {
                             <div class="input-group-prepend">
                               <div class="input-group-text"><i className="fa fa-expeditedssl" /></div>
                             </div>
-                            <input type="password" name="cf_password" id="cf_password" className="form-control bg-white" placeholder="Confirm Password" required />
+                            <input type="password" name="confirm_password" id="confirm_password" className="form-control bg-white" placeholder="Confirm Password" required />
                           </div>
                           <div class="form-group">
                             <label class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" />
+                              <input type="checkbox" class="custom-control-input" name="confirm_accept" id="confirm_accept" value="1" />
                               <span class="custom-control-label">Agree the <Link href="#"><span style={{color: '#0033CC'}}>Terms and Policy</span></Link></span>
                             </label>
                           </div>

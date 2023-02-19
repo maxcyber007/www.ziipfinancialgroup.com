@@ -7,7 +7,7 @@ import Script from 'next/script'
 import { useRouter } from "next/router";
 
 export default function Nav() {
-
+  const baseUrl = 'http://localhost:8080'
   const router = useRouter()
 
 
@@ -59,13 +59,23 @@ export default function Nav() {
 
               {!token ?
                 ("")
-                : (<li><Link className="nav-link" href="/dashboard/#">Team</Link></li>)
+                : (<li><Link className="nav-link" href="/dashboard/teams">Teams</Link></li>)
               }
 
               {!token ?
                 ("")
-                : (<li><Link className="nav-link" href="/dashboard/#">Profile</Link></li>)
+                : (<li><Link className="nav-link" href="/dashboard/grow">Growth</Link></li>)
               }
+
+              {!token ?
+                ("")
+                : (<li><Link className="nav-link" href="/dashboard/profile">Profile</Link></li>)
+              }
+
+              {/* {!token ?
+                ("")
+                : (<li><Link className="nav-link" href="/dashboard/#"><i class="bi bi-wallet"></i>&nbsp;Withdraw</Link></li>)
+              } */}
 
               {token && level === 'admin' ?
                 (<li><Link className="nav-link" href="/dashboard/#">Member</Link></li>)
