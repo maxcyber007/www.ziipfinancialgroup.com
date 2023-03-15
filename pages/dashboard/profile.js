@@ -19,8 +19,8 @@ export default function Profile() {
 
   useEffect(() => {
     const token = localStorage.getItem('token')
-    fetch('https://api.ziipfund.com/auth', {
-    //fetch('http://localhost:8080/auth', {
+    //fetch('https://api.ziipfund.com/auth', {
+    fetch('http://localhost:8081/auth', {
 
       method: 'POST', // or 'PUT'
       headers: {
@@ -76,7 +76,7 @@ export default function Profile() {
                 <div className="col-lg-6 text-center">
                   <Image src="/assets/img/avatar/avatar.png" className="" width={'170'} height={'170'} alt="" />
                 <br />
-                <Link href="#" className="btn-edit-profile">Edit Profile</Link>
+                <Link href={`/dashboard/editprofile`} className="btn-edit-profile">Edit Profile</Link>
                 </div>
                 <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
                   <div className="row align-self-center gy-4">

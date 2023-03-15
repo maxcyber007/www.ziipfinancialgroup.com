@@ -29,8 +29,8 @@ export default function Signin() {
         });
 
        
-         fetch('https://api.ziipfund.com/login', {
-        //fetch('http://localhost:8080/login', {
+        //fetch('https://api.ziipfund.com/login', {
+        fetch('http://localhost:8081/login', {
 
             method: 'POST', // or 'PUT'
             headers: {
@@ -124,8 +124,10 @@ export default function Signin() {
                                                 </form>
                                                 <p></p>
                                                 <div className="row">
-                                                    <div className="col-12">
-                                                        <Link href="/signup"><i className="fa fa-user-circle" data-toggle="tooltip" title="fa fa-user"></i> Create Account</Link>&nbsp;&nbsp;
+                                                    <div className="col-md-6">
+                                                        <Link href="/signup"><i className="fa fa-user-circle" data-toggle="tooltip" title="fa fa-user"></i> Create Account</Link>
+                                                    </div>
+                                                    <div className="col-md-6">
                                                         <Link href="#"><i className="fa fa-expeditedssl" data-toggle="tooltip" title="fa fa-expeditedssl"></i> Forgot Password</Link>
                                                     </div>
                                                 </div>

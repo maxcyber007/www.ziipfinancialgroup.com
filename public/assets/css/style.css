@@ -580,8 +580,8 @@ section {
 # About
 --------------------------------------------------------------*/
 .about .content {
-  background-color: #f6f9ff;
-  padding: 40px;
+  background-color: #FFFFFF;
+  padding: 0px;
 }
 
 .about h3 {
@@ -705,8 +705,10 @@ section {
 --------------------------------------------------------------*/
 .features {
   width: 100%;
-  background: url(../img/hero-bg.png) top center no-repeat;
+  /* background: url(../img/hero-bg.png) top center no-repeat; */
+  background: #ffffff;
   background-size: cover;
+  padding-top: 60px;
 }
 
 .text-green {

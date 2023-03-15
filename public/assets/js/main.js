@@ -51,7 +51,6 @@
         navbarlink.classList.add('active')
       } else {
         navbarlink.classList.remove('active')
-        
       }
     })
   }
@@ -130,7 +129,6 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()

@@ -54,8 +54,8 @@ export default function Signup(prop) {
 
     if(jsonData.password == jsonData.confirm_password && jsonData.confirm_accept > 0){
 
-    fetch('https://api.ziipfund.com/register', {
-    //fetch('http://localhost:8080/register', {
+    //fetch('https://api.ziipfund.com/register', {
+    fetch('http://localhost:8081/register', {
       method: 'POST', // or 'PUT'
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function Signup(prop) {
             showConfirmButton: false,
             timer: 1500
           })
-          return router.push('/signup')
+          return router.push(`${window.location.origin}/signup?ref=${data.Ref_code}`)
           console.log('Success:', data);
         }
        
@@ -99,7 +99,7 @@ export default function Signup(prop) {
         showConfirmButton: false,
         timer: 1500
       })
-      return router.push('/signup')
+      return router.push(`/signup?ref=${child_ref_code}`)
     }else if(jsonData.confirm_accept == null){
       Swal.fire({
         position: 'center',
@@ -108,7 +108,7 @@ export default function Signup(prop) {
         showConfirmButton: false,
         timer: 1500
       })
-      return router.push('/signup')
+      return router.push(`/signup?ref=${child_ref_code}`)
     }else{
 
     }
@@ -137,14 +137,15 @@ export default function Signup(prop) {
                     <div className="row">
                       <div className="col-xl-12 col-md-12 col-md-12">
                         <div className="text-center mb-12">
+                        <br />
                           {/* <Image src="/assets/img/signin/logo.png" width={150} height={51} priority /> */}
                           <h1>SIGN<span className="text-black"> UP</span></h1>
                         </div>
                         {/* <h3>Login</h3> */}
                         <p className="text-dark">Sign Up to Your Account</p>
                         <form onSubmit={handleSubmit}>
-                          <input type="hidden" name="child_ref_code" id="child_ref_code" className="form-control bg-white" placeholder="child_ref_code" value={child_ref_code} required />
-                          <input type="hidden" name="ref_code" id="ref_code" className="form-control bg-white" placeholder="ref_code" value={makeid(10)} required />
+                          <input type="hidden" name="child_ref_code" id="child_ref_code" className="form-control bg-white" placeholder="child_ref_code" defaultValue={child_ref_code} required />
+                          <input type="hidden" name="ref_code" id="ref_code" className="form-control bg-white" placeholder="ref_code" defaultValue={makeid(10)} required />
                           <div className="input-group mb-3">
                             <div class="input-group-prepend">
                               <div class="input-group-text"><i className="fa fa-user-circle" /></div>

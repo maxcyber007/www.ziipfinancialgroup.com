@@ -19,8 +19,8 @@ export default function Dashboard() {
 
   useEffect(() => {
     const token = localStorage.getItem('token')
-    fetch('https://api.ziipfund.com/auth', {
-    //fetch('http://localhost:8080/auth', {
+    //fetch('https://api.ziipfund.com/auth', {
+    fetch('http://localhost:8081/auth', {
 
       method: 'POST', // or 'PUT'
       headers: {
