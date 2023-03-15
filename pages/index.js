@@ -15,6 +15,7 @@ export default function Home() {
       <Head>
         <title>ZIIPFUND COMPANY LIMITED</title>
       </Head>
+      <Navbar />
       {/* ======= Hero Section ======= */}
       <section id="home" className="hero d-flex align-items-center">
         <div className="container">
@@ -24,10 +25,7 @@ export default function Home() {
               <h2 data-aos="fade-up" data-aos-delay="400"></h2>
               <div data-aos="fade-up" data-aos-delay="600">
                 <div className="text-center text-lg-start">
-                  <Link href="/signin" className="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                    <span>Get Started</span>
-                    <i className="bi bi-arrow-right" />
-                  </Link>
+
                 </div>
               </div>
             </div>
@@ -107,7 +105,7 @@ export default function Home() {
         </div>
       </div>
       <div className="col-lg-6">
-        <img src="assets/img/features-2.png" className="img-fluid" alt />
+        <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} alt="hero-img" priority />
       </div>
     </div>{/* End Feature Tabs */}
     
@@ -124,7 +122,7 @@ export default function Home() {
     </header>
     <div className="row">
       <div className="col-lg-6">
-        <img src="assets/img/features.png" className="img-fluid" alt />
+        <Image src="/assets/img/hero-img.png" className="img-fluid" width={539} height={438} alt="hero-img" priority />
       </div>
       <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
         <div className="row align-self-center gy-4">
