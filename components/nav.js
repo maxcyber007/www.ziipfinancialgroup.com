@@ -36,6 +36,7 @@ export default function Nav() {
               <li><a className="nav-link scrollto active" href="#home">Home</a></li>
               <li><a className="nav-link scrollto" href="#about">About</a></li>
               <li><Link className="nav-link scrollto" href="#service">Services</Link></li>
+              <li><Link className="nav-link scrollto" href="#academy">Academy</Link></li>
               <li><Link className="nav-link scrollto" href="#footer">Contact</Link></li>
               <li><Link className="getstarted-signup" href="https://secure.ziipfund.com" target="_blank">Get Started</Link></li>
 
