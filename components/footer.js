@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="col-lg-5 col-md-12 footer-info">
                 <Link href="#" className="logo d-flex align-items-center">
                   <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
-                  <span>ZIIP</span><span className='text-black'>FUND</span>
+                  <span>ZIIPFINANCIAL</span><span className='text-black'>GROUP</span>
                 </Link>
                 <p className='text-left'>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
                 <div className="social-links mt-3 text-left">
@@ -60,7 +60,7 @@ export default function Footer() {
         </div>
         <div className="container">
           <div className="copyright">
-            Copyright © 2023<strong><span> ZIIPFUND COMPANY LIMITED</span></strong>. All Rights Reserved
+            Copyright © 2023<strong><span>ZIIPFINANCIALGROUP COMPANY LIMITED</span></strong>. All Rights Reserved
           </div>
           <div className="credits">
             {/* All the links in the footer should remain intact. */}
