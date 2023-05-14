@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>ZIIPFUND COMPANY LIMITED</title>
+        <title>ZIIPFINANCIALGROUP COMPANY LIMITED</title>
       </Head>
       <Navbar />
       {/* ======= Hero Section ======= */}
@@ -42,7 +42,7 @@ export default function Home() {
   <div className="container" data-aos="fade-up">
     <header className="section-header">
       <h2>About</h2>
-      <p>ZIIPFUND COMPANY</p>
+      <p>ZIIPFINANCIALGROUP COMPANY</p>
     </header>
    
     {/* Feature Tabs */}
@@ -118,7 +118,7 @@ export default function Home() {
   <div className="container" data-aos="fade-up">
     <header className="section-header">
       <h2>SERVICES</h2>
-      <p>ZIIPFUND COMPANY</p>
+      <p>ZIIPFINANCIALGROUP COMPANY</p>
     </header>
     <div className="row">
       <div className="col-lg-6">
