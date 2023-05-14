@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="col-lg-5 col-md-12 footer-info">
                 <Link href="#" className="logo d-flex align-items-center">
                   <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
-                  <span>ZIIPFINANCIAL</span><span className='text-black'>GROUP</span>
+                  <span>ZIIP</span><span className='text-black'>FINANCIAL</span>
                 </Link>
                 <p className='text-left'>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
                 <div className="social-links mt-3 text-left">

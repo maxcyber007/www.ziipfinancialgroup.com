@@ -42,7 +42,7 @@ export default function Home() {
   <div className="container" data-aos="fade-up">
     <header className="section-header">
       <h2>About</h2>
-      <p>ZIIPFINANCIALGROUP COMPANY</p>
+      <p>ZIIP FINANCIAL</p>
     </header>
    
     {/* Feature Tabs */}
@@ -118,7 +118,7 @@ export default function Home() {
   <div className="container" data-aos="fade-up">
     <header className="section-header">
       <h2>SERVICES</h2>
-      <p>ZIIPFINANCIALGROUP COMPANY</p>
+      <p>ZIIP FINANCIAL</p>
     </header>
     <div className="row">
       <div className="col-lg-6">
