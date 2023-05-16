@@ -33,7 +33,7 @@ export default function Nav() {
           <nav id="navbar" className="navbar scolled">
             <ul>
 
-              <li><a className="nav-link scrollto active" href="#home">Home</a></li>
+              <li><a className="nav-link scrollto active" href="#hero">Home</a></li>
               <li><a className="nav-link scrollto" href="#about">About</a></li>
               <li><Link className="nav-link scrollto" href="#service">Services</Link></li>
               <li><Link className="nav-link scrollto" href="#academy">Academy</Link></li>
