@@ -38,7 +38,7 @@ export default function Nav() {
               <li><Link className="nav-link scrollto" href="#service">Services</Link></li>
               <li><Link className="nav-link scrollto" href="#academy">Academy</Link></li>
               <li><Link className="nav-link scrollto" href="#footer">Contact</Link></li>
-              <li></li>
+              <li>&nbsp;&nbsp;</li>
               <li><Link className="getstarted-signup" href="#" target="_blank">Get Started</Link></li>
 
             </ul>
