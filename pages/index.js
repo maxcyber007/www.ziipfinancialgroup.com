@@ -33,7 +33,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-              <Image src="/assets/img/img-mobile.png" className="img-fluid" width={439} height={338} alt="img-mobile1" />
+              <Image src="/assets/img/img-mobile.png" className="img-fluid" width={509} height={408} alt="img-mobile1" />
             </div>
           </div>
         </div>
