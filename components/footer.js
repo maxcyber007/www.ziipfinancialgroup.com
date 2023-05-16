@@ -48,11 +48,11 @@ export default function Footer() {
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                 <h4 className='text-left'>Contact Us</h4>
                 <p className='text-left'>
-                  10 Banpu Ralyal <br />
-                  Arina Bay Sands City 1059220<br />
-                  Singapore <br /><br />
-                  <strong>Phone:</strong> +65 0000000<br />
-                  <strong>Email:</strong> ziipfund@gmail.com<br />
+                Singapore Land Tower, 37th Floor,<br />
+                50 Raffles Place,<br />
+                048623, Singapore. <br /><br />
+                  <strong>Phone:</strong> +447458153035<br />
+                  <strong>Email:</strong> ziipfinancialgroup@gmail.com<br />
                 </p>
               </div>
             </div>

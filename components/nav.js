@@ -28,7 +28,7 @@ export default function Nav() {
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
             <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
-            <span>ZIIP</span><span className='text-black'>FINANCIAL</span>
+           <span>Ziip</span><span className='text-black'>Financial</span>
           </a>
           <nav id="navbar" className="navbar scolled">
             <ul>
@@ -38,7 +38,8 @@ export default function Nav() {
               <li><Link className="nav-link scrollto" href="#service">Services</Link></li>
               <li><Link className="nav-link scrollto" href="#academy">Academy</Link></li>
               <li><Link className="nav-link scrollto" href="#footer">Contact</Link></li>
-              <li><Link className="getstarted-signup" href="https://ziipfund.ziipfinancialgroup.com" target="_blank">Get Started</Link></li>
+              <li>&nbsp;&nbsp;</li>
+              <li><Link className="getstarted-signup" href="#" target="_blank">Get Started</Link></li>
 
             </ul>
             <i className="bi bi-list mobile-nav-toggle" />
