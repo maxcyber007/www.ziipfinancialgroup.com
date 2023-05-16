@@ -22,7 +22,7 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6 d-flex flex-column justify-content-center">
               <h1 data-aos="fade-up">Ziip Financial Group Company Limited</h1>
-              <h2 data-aos="fade-up" data-aos-delay={400}>Estate investment, Fin Tech, E-Commerce<br /><span className="text-gray">That is committed to providing investment opportunities Safe and legal to customers.</span></h2>
+              <h2 data-aos="fade-up" data-aos-delay={400}>Estate investment Fin Tech E-Commerce<br /><span className="text-gray">That is committed to providing investment opportunities Safe and legal to customers.</span></h2>
               <div data-aos="fade-up" data-aos-delay={600}>
                 <br />
                 <div className="text-center text-lg-start">
@@ -33,7 +33,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay={200}>
-              <img src="assets/img/img-mobile1.png" className="img-fluid" alt />
+              <Image src="assets/img/img-mobile1.png" className="img-fluid" alt="img-mobile1" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="container" data-aos="fade-up">
             <header className="section-header">
               <p className="text-ziip">ABOUT</p>
-              <span className='text-gray'>ZIIP FINANCIAL</span>
+              <span className="text-gray">ZIIP FINANCIAL</span>
             </header>
 
             {/* Feature Tabs */}
@@ -60,7 +60,7 @@ export default function Home() {
                   <div className="d-flex align-items-center mb-2">
                     <h4>Registered</h4>
                   </div>
-                  <p>We're registered in Singapore. We've Licenses from Singapore, UK, France, Hong Kong, Australia, and Canada.</p>
+                  <p>We re registered in Singapore. We ve Licenses from Singapore UK France Hong Kong Australia and Canada.</p>
                   <p>We operate with transparency. Completely certified and verified This ensures that our clients can invest with confidence.Knowing that their money is in safe hands.</p>
                   <div className="d-flex align-items-center mb-2">
                     <h4>Our main purpose.</h4>
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="container" data-aos="fade-up">
             <header className="section-header">
             <p className="text-ziip">SERVICES</p>
-              <span className='text-gray'>ZIIP FINANCIAL</span>
+              <span className="text-gray">ZIIP FINANCIAL</span>
             </header>
             <div className="row">
               <div className="col-lg-6">

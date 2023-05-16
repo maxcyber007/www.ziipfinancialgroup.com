@@ -17,7 +17,7 @@ export default function Footer() {
                   <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
                   <span>ZIIP</span><span className='text-black'>FINANCIAL</span>
                 </Link>
-                <p className='text-left'>A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
+                <p className="text-left">A type of investment fund that can use any strategy Freely go long or short to maximize returns as much as possible.</p>
                 <div className="social-links mt-3 text-left">
                   <Link href="#" className="twitter"><i className="bi bi-twitter" /></Link>
                   <Link href="#" className="facebook"><i className="bi bi-facebook" /></Link>
@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
               </div>
               <div className="col-lg-2 col-6 footer-links className='text-left'">
-                <h4 className='text-left'>Useful Links</h4>
+                <h4 className="text-left">Useful Links</h4>
                 <ul>
                   <li><i className="bi bi-chevron-right" /> <Link href="#">Home</Link></li>
                   <li><i className="bi bi-chevron-right" /> <Link href="#">About us</Link></li>
@@ -36,7 +36,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="col-lg-2 col-6 footer-links">
-                <h4 className='text-left'>Our Services</h4>
+                <h4 className="text-left">Our Services</h4>
                 <ul>
                   <li><i className="bi bi-chevron-right" /> <Link href="#">Financial</Link></li>
                   <li><i className="bi bi-chevron-right" /> <Link href="#">Technology</Link></li>
@@ -46,8 +46,8 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4 className='text-left'>Contact Us</h4>
-                <p className='text-left'>
+                <h4 className="text-left">Contact Us</h4>
+                <p className="text-left">
                 Singapore Land Tower, 37th Floor,<br />
                 50 Raffles Place,<br />
                 048623, Singapore. <br /><br />
