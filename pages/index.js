@@ -42,19 +42,16 @@ export default function Home() {
       <main id="main">
 
         {/* ======= About Section ======= */}
-        <section id="about" className="features">
+        <section id="about" className="features2 d-flex align-items-center">
           <div className="container" data-aos="fade-up">
             <header className="section-header">
               <p className="text-ziip">ABOUT</p>
               <span className="text-gray">ZIIP FINANCIAL</span>
             </header>
 
-            {/* Feature Tabs */}
-            <div className="row feture-tabs" data-aos="fade-up">
+            <div className="row" data-aos="fade-up">
               <div className="col-lg-6">
                 <h3>WHO WE ARE</h3>
-
-                {/* Tab Content */}
 
                 <div className="tab-pane fade show active" id="tab1">
                   <div className="d-flex align-items-center mb-2">
