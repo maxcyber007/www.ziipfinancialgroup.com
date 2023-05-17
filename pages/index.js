@@ -67,7 +67,7 @@ export default function Home() {
                 </div>{/* End Tab 1 Content */}
 
               </div>
-              <div className="col-lg-6 text-center">
+              <div className="col-lg-6 text-center animate__animated animate__pulse animate__infinite animate__slower">
                 <Image src="/assets/img/hero-img.png" className="img-fluid" width={409} height={308} alt="hero-img" priority />
               </div>
             </div>{/* End Feature Tabs */}
@@ -84,7 +84,7 @@ export default function Home() {
               <span className="text-gray">ZIIP FINANCIAL</span>
             </header>
             <div className="row">
-              <div className="col-lg-6">
+              <div className="col-lg-6 animate__animated animate__pulse animate__infinite animate__slower">
                 <Image src="/assets/img/teams.png" className="img-fluid" width={439} height={338} alt="hero-img" priority />
               </div>
               <div className="col-lg-6 mt-5 mt-lg-0 d-flex">
