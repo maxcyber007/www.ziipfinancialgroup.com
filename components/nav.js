@@ -28,7 +28,7 @@ export default function Nav() {
         <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
           <a href="#" className="logo d-flex align-items-center">
             <Image src="/assets/img/favicon.png" width="42" height="100" alt="favicon" priority />
-           <span>Ziip</span><span className='text-black'>Financial</span>
+           <span>ZIIP</span><span className='text-black'>FINANCIAL</span>
           </a>
           <nav id="navbar" className="navbar scolled">
             <ul>
