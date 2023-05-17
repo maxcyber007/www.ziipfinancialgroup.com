@@ -57,12 +57,12 @@ export default function Home() {
                   <div className="d-flex align-items-center mb-2">
                     <h4>Registered</h4>
                   </div>
-                  <p>We re registered in Singapore. We ve Licenses from Singapore UK France Hong Kong Australia and Canada.</p>
+                  <p>We re registered in Singapore. We ve Licenses from Singapore, UK, France, Hong Kong, Australia and Canada.</p>
                   <p>We operate with transparency. Completely certified and verified This ensures that our clients can invest with confidence.Knowing that their money is in safe hands.</p>
                   <div className="d-flex align-items-center mb-2">
                     <h4>Our main purpose.</h4>
                   </div>
-                  <p>Is to help investors increase wealth using STOCKS, CFD, CRYPTO trading style that has been proven and commitment to management Funds safely.</p>
+                  <p>Is to help investors increase wealth using Estate investment, Fin Tech, E-Commerce style that has been proven and commitment to management Funds safely.</p>
                 </div>{/* End Tab 1 Content */}
 
               </div>
