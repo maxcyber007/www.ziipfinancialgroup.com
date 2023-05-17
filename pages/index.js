@@ -8,6 +8,7 @@ import Link from 'next/link'
 import Navbar from 'components/nav'
 import Footer from 'components/footer'
 import { FONT_MANIFEST } from 'next/dist/shared/lib/constants'
+import 'animate.css';
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 hero-img order-md-last order-first" data-aos="zoom-out" data-aos-delay={200}>
+            <div className="col-lg-6 hero-img order-md-last order-first animate__animated animate__pulse animate__infinite animate__delay-10ms" data-aos="zoom-in" data-aos-delay={200}>
               <Image src="/assets/img/img-mobile.png" className="img-fluid" width={509} height={408} alt="img-mobile1" />
             </div>
           </div>
