@@ -23,7 +23,7 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-6 d-flex flex-column justify-content-center order-md-first order-last">
               <h1 data-aos="fade-up">Ziip Financial Group Company Limited</h1>
-              <h2 data-aos="fade-up" data-aos-delay={400}>Estate investment, Fin Tech, E-Commerce<br /><span className="text-gray">That is committed to providing investment opportunities Safe and legal to customers.</span></h2>
+              <h2 data-aos="fade-up" data-aos-delay={400}>Estate investment, Fin Tech, E-Commerce</h2>
               <div data-aos="fade-up" data-aos-delay={600}>
                 <br />
                 <div className="text-center text-lg-start">
