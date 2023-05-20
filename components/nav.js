@@ -39,8 +39,7 @@ export default function Nav() {
               <li><a className="nav-link scrollto" href="#academy">Academy</a></li>
               <li><a className="nav-link scrollto" href="#footer">Contact</a></li>
               <li>&nbsp;&nbsp;</li>
-              <li><Link className="getstarted-signup" href="https://ziipfund.ziipfinancialgroup.com" target="_blank">SignIn</Link></li>
-              <li><Link className="getstarted-signup" href="https://ziipfund.ziipfinancialgroup.com/Signup" target="_blank">SignUp</Link></li>
+              <li><Link className="getstarted-signup" href="https://ziipfund.ziipfinancialgroup.com" target="_blank">Get Started</Link></li>
             </ul>
             <i className="bi bi-list mobile-nav-toggle" />
           </nav>{/* .navbar */}
