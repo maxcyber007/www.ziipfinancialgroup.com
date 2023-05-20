@@ -51,7 +51,7 @@ export default function Footer() {
                 Singapore Land Tower, 37th Floor,<br />
                 50 Raffles Place,<br />
                 048623, Singapore. <br /><br />
-                  <strong>Phone:</strong> +447458153035<br />
+                  {/* <strong>Phone:</strong> +447458153035<br /> */}
                   <strong>Email:</strong> ziipfinancialgroup@gmail.com<br />
                 </p>
               </div>
