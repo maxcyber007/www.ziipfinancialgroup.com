@@ -77,7 +77,7 @@ export default function Home() {
 
 
         {/* ======= Service Section ======= */}
-        <section id="service" className="features">
+        {/* <section id="service" className="features">
           <div className="container" data-aos="fade-up">
             <header className="section-header">
             <p className="text-ziip">SERVICES</p>
@@ -127,8 +127,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div> {/* / row */}
-          </div></section>
+            </div>
+          </div></section> */}
 
       </main>{/* End #main */}
       <Footer />
