@@ -12,9 +12,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
 
-        {/* Template Main CSS File */}
-        <link href="/assets/css/style.css" rel="stylesheet" />
-        
+
         {/* Vendor CSS Files */}
         <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
         <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -22,7 +20,8 @@ export default function Document() {
         <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
         <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
+        {/* Template Main CSS File */}
+        <link href="/assets/css/style.css" rel="stylesheet" />
 
 
 {/* 
