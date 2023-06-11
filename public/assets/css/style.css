@@ -191,23 +191,23 @@ section {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-.header {
+.headers {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
 }
 
-.header.header-scrolled {
+.headers.header-scrolled {
   background: #FFFFFF;
   padding: 15px 0;
   box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
 }
 
-.header .logo {
+.headers .logo {
   line-height: 0;
 }
 
-.header .logo img {
+.headers .logo img {
   max-height: 40px;
   margin-right: 6px;
 }
