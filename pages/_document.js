@@ -1,4 +1,4 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
 
 export default function Document() {
@@ -11,9 +11,6 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" />
-
-        {/* Template Main CSS File */}
-        <link href="/assets/css/style.css" rel="stylesheet" />
         
         {/* Vendor CSS Files */}
         <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -23,7 +20,8 @@ export default function Document() {
         <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
         <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-
+        {/* Template Main CSS File */}
+        <link href="/assets/css/style.css" rel="stylesheet" />
 
 {/* 
 
