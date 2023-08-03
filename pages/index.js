@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ziip Financial Group</title>
+        <title>:: Ziip Financial Group ::</title>
       </Head>
       <Navbar />
       {/* ======= Hero Section ======= */}
